@@ -1,4 +1,3 @@
-// Constructor function for Person objects
 // function Person(first, last, age, eye) {
 //     this.firstName = first;
 //     this.lastName = last;
@@ -6,32 +5,28 @@
 //     this.eyeColor = eye;
 //   }
   
-//   // Create a Person object
-//   const myFather = new Person("John", "Doe", 50, "blue");
-  
-//   // Display age
-//   document.getElementById("demo").innerHTML =
-//   "My father is " + myFather.age + "."; 
-
-
-// Constructor function for Person objects
-// function Person(first, last, age, eye) {
-//     this.firstName = first;
-//     this.lastName = last;
-//     this.age = age;
-//     this.eyeColor = eye;
-//   }
-  
-//   // Create two Person objects
 //   const myFather = new Person("John", "Doe", 50, "blue");
 //   const myMother = new Person("Sally", "Rally", 48, "green");
   
-//   // Display age
 //   document.getElementById("demo").innerHTML =
-//   "My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+//   "My father is " + myFather.age + ". My mother is " + myMother.age; 
 
 
-// // Constructor function for Person objects
+// function Person(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//     this.nationality = "English";
+//   }
+  
+//   const myFather = new Person("John", "Doe", 50, "blue");
+//   const myMother = new Person("Sally", "Rally", 48, "green");
+  
+//   document.getElementById("demo").innerHTML =
+//   "The nationality of my father is " + myFather.nationality + ". The nationality of my mother is " + myMother.nationality;
+
+//Using the prototype Property
 // function Person(first, last, age, eye) {
 //     this.firstName = first;
 //     this.lastName = last;
@@ -39,20 +34,15 @@
 //     this.eyeColor = eye;
 //   }
   
-//   // Create 2 Person objects
+//   Person.prototype.nationality = "English";
+  
 //   const myFather = new Person("John", "Doe", 50, "blue");
-//   const myMother = new Person("Sally", "Rally", 48, "green");
-  
-//   // Add nationality to first object
-//   myFather.nationality = "English";
-  
-//   // Display nationality 
 //   document.getElementById("demo").innerHTML =
-//   "My father is " + myFather.nationality; 
+//   "The nationality of my father is " + myFather.nationality; 
 
 
-//Adding a Method to an Object
-// Constructor function for Person objects
+//The JavaScript prototype property also allows you to add new methods to objects constructors:
+
 function Person(first, last, age, eye) {
     this.firstName = first;
     this.lastName = last;
@@ -60,15 +50,10 @@ function Person(first, last, age, eye) {
     this.eyeColor = eye;
   }
   
-  // Create 2 Person objects
-  const myFather = new Person("John", "Doe", 50, "blue");
-  const myMother = new Person("Sally", "Rally", 48, "green");
-  
-  // Add a name method to first object
-  myFather.name = function() {
-    return this.firstName + " " + this.lastName;
+  Person.prototype.name = function() {
+    return this.firstName + " " + this.lastName
   };
   
-  // Display full name
+  const myFather = new Person("John", "Doe", 50, "blue");
   document.getElementById("demo").innerHTML =
   "My father is " + myFather.name(); 

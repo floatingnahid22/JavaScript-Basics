@@ -1,0 +1,37 @@
+12th April:
+JS Objects: 
+1. Object Properties
+2. Object Constructor
+3. Object Prototypes
+4. Object Sets
+5. Object Maps
+
+JS Functions:
+1.  Function Parameters
+2. Function Call
+3. Function Apply
+4. Function Bind
+5. Function Closures
+
+JS Classes: 
+1. Class Inheritance
+2. Class Static
+
+13th April:
+JS Async:
+1. JS Callbacks
+2. JS Asynchronous
+3. JS Promises
+4. JS Async/Await
+
+JS HTML DOM:
+1. DOM Events
+2. DOM Event Listener
+
+JS Web APIs:
+1. Web Fetch API
+
+JS Graphics:
+1. JS Graphics
+2. JS Chart.js
+3. JS Google Chart

@@ -1,0 +1,12 @@
+All JavaScript values, except primitives, are objects.
+
+JavaScript Primitives:
+A primitive value is a value that has no properties or methods. 3.14 is a primitive value. A primitive data type is data that has a primitive value.
+JavaScript defines 7 types of primitive data types:
+1. string
+2. number
+3. boolean
+4. null
+5. undefined
+6. symbol
+7. bigint

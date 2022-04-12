@@ -1,32 +1,74 @@
-// let person = "John Doe";
-// document.getElementById("demo").innerHTML = person;
-
-// let person = {
-//     firstName : "John",
-//     lastName  : "Doe",
-//     age     : 50,
-//     eyeColor  : "blue"
-//   };
+// Constructor function for Person objects
+// function Person(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//   }
   
-//   document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
-
-// JavaScript Object Using an Object Literal(For readability, simplicity and execution speed, use the object literal method.)
-// const person = {
-//     firstName: "John",
-//     lastName: "Doe",
-//     age: 50,
-//     eyeColor: "blue"
-//   };
+//   // Create a Person object
+//   const myFather = new Person("John", "Doe", 50, "blue");
   
+//   // Display age
 //   document.getElementById("demo").innerHTML =
-//   person.firstName + " is " + person.age + " years old.";
+//   "My father is " + myFather.age + "."; 
 
-//Using the JavaScript Keyword new
-const person = new Object();
-person.firstName = "John";
-person.lastName = "Doe";
-person.age = 50;
-person.eyeColor = "blue"; 
 
-document.getElementById("demo").innerHTML =
-person.firstName + " is " + person.age + " years old.";
+// Constructor function for Person objects
+// function Person(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//   }
+  
+//   // Create two Person objects
+//   const myFather = new Person("John", "Doe", 50, "blue");
+//   const myMother = new Person("Sally", "Rally", 48, "green");
+  
+//   // Display age
+//   document.getElementById("demo").innerHTML =
+//   "My father is " + myFather.age + ". My mother is " + myMother.age + "."; 
+
+
+// // Constructor function for Person objects
+// function Person(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//   }
+  
+//   // Create 2 Person objects
+//   const myFather = new Person("John", "Doe", 50, "blue");
+//   const myMother = new Person("Sally", "Rally", 48, "green");
+  
+//   // Add nationality to first object
+//   myFather.nationality = "English";
+  
+//   // Display nationality 
+//   document.getElementById("demo").innerHTML =
+//   "My father is " + myFather.nationality; 
+
+
+//Adding a Method to an Object
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+  }
+  
+  // Create 2 Person objects
+  const myFather = new Person("John", "Doe", 50, "blue");
+  const myMother = new Person("Sally", "Rally", 48, "green");
+  
+  // Add a name method to first object
+  myFather.name = function() {
+    return this.firstName + " " + this.lastName;
+  };
+  
+  // Display full name
+  document.getElementById("demo").innerHTML =
+  "My father is " + myFather.name(); 

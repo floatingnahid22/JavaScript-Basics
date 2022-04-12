@@ -1,16 +1,16 @@
-JavaScript Object Constructors:
-In a constructor function "this" does not have a value. It is a substitute for the new object. The value of "this" will become the new object when a new object is created.
+JavaScript Object Prototypes:
+All JavaScript objects inherit properties and methods from a prototype.
+We also learned that you can not add a new property to an existing object constructor. To add a new property to a constructor, you must add it to the constructor function.
 
-What is "this"?
-In JavaScript, the "this" keyword refers to an object. Which object depends on how "this" is being invoked (used or called).
+Prototype Inheritance:
+All JavaScript objects inherit properties and methods from a prototype:
 
-The "this" keyword refers to different objects depending on how it is used:
+Date objects inherit from Date.prototype
+Array objects inherit from Array.prototype
+Person objects inherit from Person.prototype
+The Object.prototype is on the top of the prototype inheritance chain:
 
-In an object method, "this" refers to the object.
-Alone, "this" refers to the global object.
-In a function, "this" refers to the global object.
-In a function, in strict mode, "this" is undefined.
-In an event, "this" refers to the element that received the event.
-Methods like call(), apply(), and bind() can refer "this" to any object.
-Note
-"this" is not a variable. It is a keyword. You cannot change the value of "this".
+Date objects, Array objects, and Person objects inherit from Object.prototype.
+
+Using the prototype Property:
+The JavaScript prototype property allows you to add new properties to object constructors.
